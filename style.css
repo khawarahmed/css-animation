@@ -1,0 +1,135 @@
+body{
+    background-image: linear-gradient(to right, yellow, red);
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.khawar{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transform: translateY(250%);
+}
+
+.btn{
+    border-radius: 50px;
+    border: none;
+    animation: khawar 1s linear infinite;
+    transition: 2s;
+}
+
+.btn:hover{
+    color: black;
+    transform: rotate(180deg);
+}
+
+@keyframes khawar{
+    0%{
+        transform: scale(2);
+        opacity: 0;
+    }
+    25%{
+        /* color:; */
+        background-color: aqua;
+    }
+    75%{
+        background-color: lightblue;
+        /* color: crimson; */
+    }
+    100%{
+        transform: scale(0);
+        background-color: red;
+    }
+}
+
+ul li{
+    position: absolute;
+    border: 1px solid black;
+    list-style: none;
+    width: 10px;
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    animation-delay: 0.2s;
+    background-color: darkcyan;
+    animation: animate 3s linear infinite;
+}
+
+ul li:nth-child(2){
+    position: absolute;
+    border: 1px solid black;
+    list-style: none;
+    width: 10px;
+    top: 100%;
+    left: 20%;
+    height: 10px;
+    background-color: darkcyan;
+    animation: animate 3s linear infinite;
+    animation-delay: 0.5s;
+}
+
+ul li:nth-child(3){
+    position: absolute;
+    border: 1px solid black;
+    list-style: none;
+    width: 10px;
+    top: 100%;
+    left: 40%;
+    height: 10px;
+    background-color: darkcyan;
+    animation: animate 3s linear infinite;
+    animation-delay: 1s;
+}
+
+ul li:nth-child(4){
+    position: absolute;
+    border: 1px solid black;
+    list-style: none;
+    width: 10px;
+    top: 100%;
+    left: 60%;
+    height: 10px;
+    background-color: darkcyan;
+    animation: animate 3s linear infinite;
+    animation-delay: 0.7s;
+}
+
+ul li:nth-child(5){
+    position: absolute;
+    border: 1px solid black;
+    list-style: none;
+    width: 10px;
+    top: 100%;
+    left: 80%;
+    height: 10px;
+    background-color: darkcyan;
+    animation: animate 3s linear infinite;
+    animation-delay: 1s;
+}
+
+ul li:nth-child(6){
+    position: absolute;
+    border: 1px solid black;
+    list-style: none;
+    width: 10px;
+    top: 100%;
+    left: 95%;
+    height: 10px;
+    background-color: darkcyan;
+    animation: animate 3s linear infinite;
+    animation-delay: 0.1s;
+}
+
+
+@keyframes animate{
+    0%{
+        top: 0%;
+        transform: rotate(360deg);
+
+    }
+    100%{
+        opacity: 0;
+    }
+}
